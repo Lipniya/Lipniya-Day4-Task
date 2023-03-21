@@ -1,0 +1,52 @@
+1.How to compare two JSON have the same properties without order?
+
+const obj1 = {fname: "person1", age: 5};
+const obj2 = {age: 5,fname: "person1"};
+console.log(JSON.stringify(obj1)==JSON.stringify(obj2))
+
+2.API URL:  FLAG
+let get=async()=>{
+  let data=await window.fetch('https://restcountries.com/v3.1/all')
+  let payload=await data.json()
+  console.log(payload);
+  for (let x of payload){
+      console.log('flag',x.flag);
+  }
+};
+  get()
+
+3.REGION NAME:
+
+let get=async()=>{
+  let data=await window.fetch('https://restcountries.com/v3.1/all')
+  let payload=await data.json()
+  console.log(payload);
+  for (let x of payload){
+      console.log('region',x.region);
+  }
+};
+  get()
+
+SUB REGION NAME:
+
+let get=async()=>{
+  let data=await window.fetch('https://restcountries.com/v3.1/all')
+  let payload=await data.json()
+  console.log(payload);
+  for (let x of payload){
+      console.log('sub region',x.sub region);
+  }
+};
+  get()
+
+POPULATION:
+
+let get=async()=>{
+  let data=await window.fetch('https://restcountries.com/v3.1/all')
+  let payload=await data.json()
+  console.log(payload);
+  for (let x of payload){
+      console.log('population',x.population);
+  }
+};
+  get()
